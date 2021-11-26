@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Center</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asap:wght@700&family=Nunito:wght@700&family=Roboto:wght@400;500&family=Ubuntu:wght@500;700&family=Yellowtail&display=swap');
+        </style>
+
+
+    <link rel="stylesheet" href="arquivos/css/chat.css">
+    <link rel="stylesheet" href="arquivos/css/site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <nav>
+        <a href="#"> PETCENTER </a>
+
+        <ul>
+            <li><a href="#Sobre">Sobre</a></li>
+            <li><a href="#Serviços">Serviços</a></li>
+            <li><a href="#Fotos">Fotos</a></li>
+            <li><a href="#Contato">Contato</a></li>
+        </ul>    
+
+    </nav>
+    <!-- FIM BARRA DE NAVEGAÇÃO -->
+
+
+    <!-- HEADER -->
+        <header id="Topo">
+            <h1> Tudo de melhor para o seu pet </h1>
+            <p>
+                Todo o conforto e a dedicação que você busca para o melhor do seu pet está aqui! 
+                Contamos com um grande time de ótimos profissionais, dedicados a darem o seu melhor e tratarem o seu parceiro
+                com muito amor e carinho. 
+                Temos também diversos serviços tanto em nossa unidade quanto aqui pelo próprio site, você poder dar uma olhada na página 
+                para saber mais, ou para facilitar, abrir o chatbot e ir direto para informação que desejar. Fique a vontade para explorar a Petcenter!!
+            </p>
+            <a href="#Serviços" class="botao"> Ver Mais </a>
+        </header>
+    <!-- FIM HEADER -->
+
+    <!-- SECTION -->
+
+        <section id="Sobre">
+            <h2>Sobre</h2>
+            <p>
+                Somos uma empresa de Petshop que trabalha desde 2015 com cães e gatos, temos orgulho em nosso atendimento com 
+                os melhores profissionais desde o administrativo até nossos médicos veterinários. Sempre nos preocupando com o seu animalzinho
+                 oferecemos alguns serviços como banho e tosa, escovação dental, castração e vacinas.
+
+            </p>
+            <a href="#Contato" class="botao" > Entre em contato </a>
+        </section>
+
+        <section id="Serviços">
+            <h2>Serviços</h2>
+            
+            <div>   
+
+                <img src="imagens/p1.png" alt="banho">
+                <h3>Banho e Tosa</h3>
+                <p>
+                    Para a higiene de cães e gatos, temos diversos serviços disponiveis. Para consultar nossos preços 
+                    é só clicar no nosso Bot que fica na parte de baixo do site, clique em “Converse conosco!” e digite: “Banho e tosa”.
+
+                </p>
+
+            </div>
+
+            <div>   
+
+                <img src="imagens/p2.png" alt="castraçao">
+                <h3>Castração</h3>
+                <p>
+                    Também realizamos a castração do seu cão ou gato, que além de fazer com que o animalzinho não reproduza 
+                    e crie alguns hábitos de cio, pode ajudar a população de cães e gatos de rua em geral, diminuindo a 
+                    quantidade de animais de rua. Para consultar nossos preços é só clicar no nosso Bot que fica na parte de baixo do site, 
+                    clique em “Converse conosco!” e digite: “Castração”.
+
+
+                </p>
+
+            </div>
+
+            <div>   
+
+                <img src="imagens/p3.png" alt="vacina">
+                <h3>Vacinas</h3>
+                <p>
+                    Vacinas são essenciais para nossos bichinhos, para que se evitem diversas doenças, assim como nós humanos, 
+                    eles também tem algumas vacinas que ajudam na prevenção.
+                    Para consultar nossos preços é só clicar no nosso Bot que fica na parte de baixo do site, 
+                    clique em “Converse conosco!” e digite: “Vacina”.
+                </p>
+
+            </div>
+            
+        </section>
+
+        <section id="Fotos">
+            <h2> Fotos </h2>                
+
+                <img src="imagens/cachorro1.jpg" alt="cachorro1">
+                <img src="imagens/cachorro2.jpg" alt="cachorro2">
+                <img src="imagens/cachorro3.jpg" alt="cachorro3">
+                <img src="imagens/cachorro4.jpg" alt="cachorro4">
+                <img src="imagens/cachorro5.jpg" alt="cachorro5">
+                <img src="imagens/cachorro6.jpg" alt="cachorro6">
+        </section>
+
+        <section id="Contato">
+            <h2> Contato </h2>
+
+            <div>
+                <img src="imagens/tel.png" alt="telefone">
+                <p> (11) 9 9999-9999 </p>
+            </div>
+
+            <div>
+                <img src="imagens/mail.png" alt="email">
+                <p> petcenter@gmail.com  </p>
+            </div>
+
+        </section>
+
+        <footer>
+            <a href="#Topo">Voltar</a>
+        </footer>
+
+    <!-- FIM SECTION -->
+
+    <!-- JANELA CHATBOT -->
+    <div class="colapso-barra-chat">
+        <button id="botao-chat" type="button" class="colapsar">Converse conosco!
+            <i id="icone-chat" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="conteudo">
+            <div class="bloco-de-chat">
+
+                <!-- CONTAINER DAS MENSAGENS -->
+                <div class="container-externo">
+                    <div class="container-chat">
+                        
+                        <!-- MENSAGENS -->
+                        <div id="chatbox">
+                            <h5 id="horario-chat"></h5>
+                            <p id="iniciarMensagens" class="textoBot"><span>Carregando...</span></p>
+                        </div>
+
+                        <!-- INPUT DO USUÁRIO -->
+                        <div class="bloco-de-input-chat">
+                            <div id="inputUsuario">
+                                <input id="inputTexto" class="caixa-input" type="text" name="msg"
+                                    placeholder="Aperte 'Enter' para enviar">
+                                <p></p>
+                            </div>
+
+                            <div class="icones-barra-chat">
+                                <i id="icone-chat" style="color: #11a152;" class="fa fa-fw fa-heart"
+                                    onclick="botaoFavorito()"></i>
+                                <i id="icone-chat" style="color: #11a152;" class="fa fa-fw fa-send"
+                                    onclick="botaoEnviar()"></i>
+                            </div>
+                        </div>
+
+                        <div id="resposta-barra-chat">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIM JANELA CHATBOT -->
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="arquivos/scripts/respostas.js"></script>
+<script src="arquivos/scripts/chat.js"></script>
+
+</html>
